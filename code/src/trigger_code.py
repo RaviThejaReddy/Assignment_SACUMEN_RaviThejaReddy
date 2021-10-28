@@ -10,7 +10,13 @@ import datetime
 import os
 
 
-if __name__ == '__main__':
+def do_the_process():
+    """
+    Properties of this function
+    - will be used to trigger the code.
+    - the code will be running in the background.
+    - it will call main code when a file is created in the directory["log_files"] every 10 seconds.
+    """
     path_to_watch = "log_files"
     path_for_processed_files = "processed_log_files"
     before = dict ([(f, None) for f in os.listdir (path_to_watch)])
@@ -32,3 +38,7 @@ if __name__ == '__main__':
         else:
             print(f'nothing to add')
             before = after = {}
+
+
+if __name__ == '__main__':
+    do_the_process()
