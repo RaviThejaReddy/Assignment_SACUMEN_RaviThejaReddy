@@ -30,6 +30,7 @@
 # ABOUT THIS CODE
 * run the trigger_code.py
 * it will process any files which are under log_files and move them to processed_log_files by appending the current date time to the file name
+* it will run the logic every 10 seconds and if any file has been added to the log_files folder from past 10 seconds 
 
 
 
