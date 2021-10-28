@@ -39,7 +39,7 @@ from root folder
 * python .\code\src\trigger_code.py
 
 # To run Pytest
-# to generate html report 
-* python -m pytest --cov-report html
+## * to generate html report 
+    * python -m pytest --cov-report html
 
 
