@@ -27,7 +27,10 @@
             dst: 1.1.1.1
         }
 
-# about this program
+# ABOUT THIS CODE
+* run the trigger_code.py
+* it will process any files which are under log_files and move them to processed_log_files by appending the current date time to the file name
+
 
 
 #  to install Required packages  run below command

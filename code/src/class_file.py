@@ -1,12 +1,17 @@
+"""
+Class for some of the file operations and core logic.
+"""
 import os
 
 
 class convert_log_to_dict():
+    """
+    core logic for converting log file to dictionary
+    """
     def get_data_from_list(list_data):
         return [x.split('|')[-1] for x in list_data]
 
     def get_key_value_pair_in_list(data):
-        # content = data.split('|')[-1]
         non_char = "[@_!#$%^&*()<>?/\|}{~:]"
         new_list = []
         for x in data.split():
@@ -26,6 +31,9 @@ class convert_log_to_dict():
 
 
 class file_handeling():
+    """
+    class for file operations
+    """
     def get_files_in_dir(dir_path):
         return os.listdir(dir_path)
 
