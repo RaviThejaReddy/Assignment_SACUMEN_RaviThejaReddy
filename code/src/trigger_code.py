@@ -4,7 +4,7 @@ Properties of this file
 - the code will be running in the background.
 - it will call main code when a file is created in the directory["log_files"] every 10 seconds.
 """
-from class_file import file_handeling
+from utils.class_file import file_handeling
 from main import covet_log_to_dict_from_file
 import time
 import datetime
