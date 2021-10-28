@@ -1,5 +1,4 @@
-from utils.class_file import file_handeling, convert_log_to_dict
-
+from class_file import file_handeling, convert_log_to_dict
 
 def covet_log_to_dict_from_file(path):
     file_data = file_handeling.get_data_from_file(path)
