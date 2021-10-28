@@ -6,10 +6,10 @@ class convert_log_to_dict():
         return [x.split('|')[-1] for x in list_data]
 
     def get_key_value_pair_in_list(data):
-        content = data.split('|')[-1]
+        # content = data.split('|')[-1]
         non_char = "[@_!#$%^&*()<>?/\|}{~:]"
         new_list = []
-        for x in content.split():
+        for x in data.split():
             if '=' not in x and '=' in new_list[-1]:
                 new_list[-1]+=x
                 new_list[-1]+=' '
